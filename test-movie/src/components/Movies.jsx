@@ -96,7 +96,7 @@ const selectMovie = async (movie) => {
       <div className="hero" style={{backgroundImage: `url('${IMAGE_URL}${selectedMovie.backdrop_path}')`}}>
         <div className="hero-content max-center" >
             
-            {playTrailer ? <button onClick={() => setPlayTrailer(false)} className="play-btn close">close trailer</button>:null }
+            {playTrailer ? <button onClick={() => setPlayTrailer(false)} className="play-btn close">X</button>:null }
             { selectedMovie.videos && playTrailer ?  renderTrailer() : null }
             <button onClick={() => setPlayTrailer(true)} className="play-btn">Play Trailer</button>
             <h1 className="hero-title">{selectedMovie.title}</h1>

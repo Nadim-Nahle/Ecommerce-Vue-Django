@@ -77,8 +77,13 @@ color: white;
 }
 
 .close{
-    position: relative;
+    position: absolute;
     z-index: 10;
-    bottom: -200px;
-    left: -200px;
+    margin-top: 1px;
+     margin-right: 2px;
+     top:0;
+     right:0;
+     border: 1;
+     border-radius: 50%;
+     font-size: 20px;
 }
