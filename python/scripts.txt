@@ -1,0 +1,3 @@
+python -m venv c:\\...\venv
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+venv\scripts\activate
