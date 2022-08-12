@@ -6,7 +6,7 @@ def maxarray(array,n):
         res = max(res,maximum)
     print(res)
 
-array=[1,-2,5,-9,-3-3-3,6]
+array=[1,-2,5,-9,-3-3-3,6]  
 n = len(array);
 
 maxarray(array,n)
