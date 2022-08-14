@@ -1,5 +1,6 @@
 #LINEAR SEARCH
-def rotated(arr,arr1):
+def rotated(arr):
+    arr1 = arr.copy()
     arr.sort();
     t = arr[0];
     for i in range(len(arr1)):
@@ -9,6 +10,6 @@ def rotated(arr,arr1):
 arr=[5,6,9,0,2,3,4]
 arr1=[5,6,9,0,2,3,4]
 
-print(rotated(arr,arr1))
+print(rotated(arr))
 
 
