@@ -1,1 +1,1 @@
-rotated(arr)
+my_list.get(int(0))
