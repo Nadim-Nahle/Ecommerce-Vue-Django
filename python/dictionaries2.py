@@ -16,5 +16,8 @@ def search(dic):
         newEmail = input('please enter the new email\n')
         dic[edit] = newEmail
         return dic
+    if x == 'a':
+        new_dic = {v: k for k, v in dic.items()}
+        return new_dic
 
 print(search(phoneBook))
