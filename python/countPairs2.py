@@ -1,3 +1,6 @@
+from distutils.log import error
+
+
 def countPairs2(arr, sum):
     map={};
     for i in arr:
@@ -5,12 +8,16 @@ def countPairs2(arr, sum):
             map[i] +=1
         else:
             map[i]=1
-    print(map)
+
     count = 0;
     for j in arr:
-        count += map[sum-j]
-        if sum-j == j:
-            count = count -1
+        try:
+            count += map[sum-j]
+            if sum-j == j:
+                count = count -1
+        except Exception:
+            pass
 
-    print(count//2)
-countPairs2([1,2,2,1],3)
+
+    return count//2
+print(countPairs2([1,2,2,4,5,3],5))
