@@ -1,3 +1,5 @@
+import itertools;
+
 def validParenth(str):
     arr=[];
     closeToOpen = {
@@ -17,4 +19,4 @@ def validParenth(str):
     return True if not arr else False
 
 
-print(validParenth('(())()'))
+arr1=['(','(',')']
