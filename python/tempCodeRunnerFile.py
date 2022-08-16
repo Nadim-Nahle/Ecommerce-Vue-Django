@@ -1,1 +1,1 @@
-value
+nt(isDigit(126))
