@@ -1,1 +1,1 @@
-nt(isDigit(126))
+list
