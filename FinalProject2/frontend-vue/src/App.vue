@@ -59,6 +59,15 @@
     </footer>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      showMobileMenu: false,
+    };
+  },
+};
+</script>
 
 <style lang="scss">
 @import "../node_modules/bulma";
