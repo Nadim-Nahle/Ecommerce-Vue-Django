@@ -24,8 +24,8 @@
         v-bind:class="{ 'is-active': showMobileMenu }"
       >
         <div class="navbar-end">
-          <router-link to="/summer" class="navbar-item">Cars</router-link>
-          <router-link to="/winter" class="navbar-item"
+          <router-link to="/cars" class="navbar-item">Cars</router-link>
+          <router-link to="/motorcycles" class="navbar-item"
             >Motorcycles</router-link
           >
           <div class="navbar-item">
