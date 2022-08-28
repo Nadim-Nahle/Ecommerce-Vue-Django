@@ -11,7 +11,7 @@
         <h2 class="is-size-2 has-text-centered">Latest vehicle</h2>
       </div>
       <div
-        class="column is-12"
+        class="column is-3"
         v-for="product in latestProducts"
         v-bind:key="product.id"
         v-bind:product="product"
@@ -41,12 +41,10 @@ export default {
   components: {},
   mounted() {
     this.getLatestProducts();
-    document.title = "Home | Djackets";
   },
   methods: {
-    async getLatestProducts() {
-      this.$store.commit("setIsLoading", true);
-      await axios
+    getLatestProducts() {
+      axios
         .get("/api/v1/latest-products/")
         .then((response) => {
           this.latestProducts = response.data;
@@ -54,8 +52,15 @@ export default {
         .catch((error) => {
           console.log(error);
         });
-      this.$store.commit("setIsLoading", false);
     },
   },
 };
 </script>
+
+<style scoped>
+.image {
+  margin-top: 0.25rem;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
+</style>
