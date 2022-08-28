@@ -12,6 +12,21 @@ export default createStore({
   getters: {
   },
   mutations: {
+    initializeStore(state) {
+      if (localStorage.getItem('cart')) {
+        state.cart = JSON.parse(localStorage.getItem('cart'))
+      } else {
+        localStorage.setItem('cart', JSON.stringify(state.cart))
+      }
+      if (localStorage.getItem('token')) {
+        state.token = localStorage.getItem('token')
+        state.isAuthenticated = true
+      } else {
+        state.token = ''
+        state.isAuthenticated = false
+      }
+    },
+
   },
   actions: {
   },
