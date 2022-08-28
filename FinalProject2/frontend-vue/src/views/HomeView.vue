@@ -45,6 +45,7 @@ export default {
   components: {},
   mounted() {
     this.getLatestProducts();
+    document.title = " Home | LeVehicles";
   },
   methods: {
     async getLatestProducts() {
