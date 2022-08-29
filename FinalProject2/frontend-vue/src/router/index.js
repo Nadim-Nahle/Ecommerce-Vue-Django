@@ -36,7 +36,10 @@ const routes = [
   {
     path: '/my-account',
     name: 'MyAccount',
-    component: MyAccount
+    component: MyAccount,
+    meta: {
+      requireLogin: true
+    }
   },
   {
     path: '/cart',
@@ -58,6 +61,14 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.requireLogin) && !store.state.isAuthenticated) {
+    next({ name: 'LogIn', query: { to: to.path } });
+  } else {
+    next()
+  }
 })
 
 export default router
