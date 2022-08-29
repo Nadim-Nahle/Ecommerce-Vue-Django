@@ -8,13 +8,16 @@
     </section>
     <div class="columns is-multiline">
       <div class="column is-12">
-        <h2 class="is-size-2 has-text-centered">Latest vehicle</h2>
+        <h2 class="is-size-2 has-text-centered">Promotions</h2>
       </div>
-      <ProductBox
-        v-for="product in latestProducts"
-        v-bind:key="product.id"
-        v-bind:product="product"
-      />
+      <div class="promotion">
+        <img
+          class="promo-image"
+          src="https://i.ibb.co/27n1Hff/banner-best-car-special-offer-3d-render.jpg"
+          alt="banner-best-car-special-offer-3d-render"
+          border="0"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -52,3 +55,15 @@ export default {
   },
 };
 </script>
+
+<style>
+.promotion {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.promo-image {
+  width: 80%;
+}
+</style>
