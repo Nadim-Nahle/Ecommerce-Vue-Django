@@ -2,13 +2,13 @@
   <div id="wrapper">
     <nav class="navbar is-dark">
       <div class="navbar-brand">
-        <div class="navbar-item">
+        <router-link to="/" class="navbar-item">
           <img
             class="logo"
             src="https://i.ibb.co/4RRGCSn/Retro-and-Classic-Car-Club-Community-Logo-1.png"
             alt="logo"
           />
-        </div>
+        </router-link>
         <a
           class="navbar-burger"
           aria-label="menu"
