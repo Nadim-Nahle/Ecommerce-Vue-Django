@@ -2,9 +2,13 @@
   <div id="wrapper">
     <nav class="navbar is-dark">
       <div class="navbar-brand">
-        <router-link to="/" class="navbar-item"
-          ><strong>Ecommerce</strong></router-link
-        >
+        <div class="navbar-item">
+          <img
+            class="logo"
+            src="https://i.ibb.co/4RRGCSn/Retro-and-Classic-Car-Club-Community-Logo-1.png"
+            alt="logo"
+          />
+        </div>
         <a
           class="navbar-burger"
           aria-label="menu"
@@ -158,4 +162,12 @@ export default {
     height: 80px;
   }
 }
+.navbar {
+  height: 12vh;
+}
+.logo {
+  width: 100px;
+  height: 100vh;
+}
 </style>
+<style></style>
