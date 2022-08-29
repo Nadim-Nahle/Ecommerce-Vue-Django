@@ -66,4 +66,23 @@ export default {
 .promo-image {
   width: 80%;
 }
+.hero {
+  display: flex;
+  width: 100%;
+  height: 46vh;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://i.ibb.co/3vjMSWs/grey-metallic-jeep-with-blue-stripe-it.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #4b2727;
+  background-blend-mode: lighten;
+  padding: 0;
+}
 </style>
