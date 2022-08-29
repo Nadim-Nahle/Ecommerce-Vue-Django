@@ -17,7 +17,14 @@
             </tr>
           </thead>
 
-          <tbody></tbody>
+          <tbody>
+            <CartItem
+              v-for="item in cart.items"
+              v-bind:key="item.product.id"
+              v-bind:initialItem="item"
+              v-on:removeFromCart="removeFromCart"
+            />
+          </tbody>
         </table>
 
         <p v-else>You don't have any products in your cart...</p>
@@ -41,9 +48,12 @@
 
 <script>
 import axios from "axios";
+import CartItem from "@/components/CartItem.vue";
 export default {
   name: "Cart",
-  components: {},
+  components: {
+    CartItem,
+  },
   data() {
     return {
       cart: {
