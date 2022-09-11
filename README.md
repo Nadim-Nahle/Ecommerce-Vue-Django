@@ -46,7 +46,7 @@ Using the above mentioned tech stacks and the wireframes build with figma from t
 
 | Cars  | Motorcycles  |
 | -----------------| -----|
-| ![Cars]https://i.postimg.cc/bwm1GCxc/cars.png) | ![Motorcycles](https://i.postimg.cc/PJbwd2X7/moto.png)
+| ![Cars](https://i.postimg.cc/bwm1GCxc/cars.png) | ![Motorcycles](https://i.postimg.cc/PJbwd2X7/moto.png)
 
 | Login | Checkout  |
 | -----------------| -----|
